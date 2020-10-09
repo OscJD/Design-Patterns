@@ -1,0 +1,17 @@
+
+public class PrintingVisitor implements IVisitor{
+
+	@Override
+	public void visit(INumber element) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void visit(IOperation element) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}

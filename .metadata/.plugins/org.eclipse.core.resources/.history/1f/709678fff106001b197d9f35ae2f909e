@@ -1,0 +1,12 @@
+
+public class Menu {
+	
+	public Menu() {}
+	
+	
+	public boolean open() {
+		System.out.println("Open");
+		return true;		
+	}
+
+}

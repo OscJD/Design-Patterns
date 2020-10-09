@@ -1,0 +1,9 @@
+
+public interface IVisitor {
+	
+	public void visit(IElement element);
+	public void visit(IOperation element);
+	
+	
+	public void printResult();
+}

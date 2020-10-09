@@ -1,0 +1,6 @@
+package lab3.homework;
+
+public class Male extends Sex_class
+{
+
+}

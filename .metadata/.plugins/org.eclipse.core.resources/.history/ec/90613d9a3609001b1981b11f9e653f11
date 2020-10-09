@@ -1,0 +1,12 @@
+
+public interface INumber {
+	
+	public void show_content();
+	
+	public int get_value();
+	
+	public void iterate(IVisitor visitor);
+	
+	public String toString();
+
+}

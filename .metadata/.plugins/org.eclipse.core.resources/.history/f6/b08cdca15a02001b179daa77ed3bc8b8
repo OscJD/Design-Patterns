@@ -1,0 +1,16 @@
+package lab3.homework;
+
+import lab3.homework.Person_.Sex;
+
+public class Male extends Sex_class
+{
+
+	public Male(Sex sex){
+		
+	}
+	
+	@Override
+	public void Show_sex(String extra_data) {
+		
+	}
+}

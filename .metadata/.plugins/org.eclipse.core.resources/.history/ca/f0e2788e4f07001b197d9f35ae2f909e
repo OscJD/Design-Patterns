@@ -1,0 +1,12 @@
+
+public interface IElement {
+	
+	public void show_content();
+	
+	public void iterate();
+	
+	public String toString();
+	
+	public void iterate(IVisitor visitor);
+
+}

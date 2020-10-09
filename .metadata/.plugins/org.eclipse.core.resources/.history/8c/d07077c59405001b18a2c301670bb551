@@ -1,0 +1,28 @@
+
+public class Main {
+	
+	public static void main(String[] args) {
+		Jaguar yagua = new Jaguar(10, 120f);
+		
+		System.out.println(yagua);
+		
+		yagua.comer();
+		yagua.dormir();
+		
+		yagua.cazar();
+		yagua.rugir();
+		
+		
+		Jaguar jaguar_2 = new Jaguar();
+		System.out.println(jaguar_2);
+		
+		
+		Jaguar jaguar_3 = new Jaguar(3);
+		System.out.println(jaguar_3);
+		
+		Jaguar jaguar_4 = new Jaguar(100);
+		System.out.println(jaguar_4);
+	
+	}
+
+}

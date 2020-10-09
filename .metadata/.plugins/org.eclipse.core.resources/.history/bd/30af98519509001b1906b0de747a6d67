@@ -1,0 +1,22 @@
+
+public class CalculatingVisitor implements IVisitor{
+
+	
+	public CalculatingVisitor() {
+		
+	}
+
+	public int visit(INode number) {
+		return number.get_value();
+	}
+
+
+	public int visit(IOperation node) {
+		node.show_content();
+		return 0;
+		
+	}
+
+
+
+}

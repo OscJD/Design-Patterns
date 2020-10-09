@@ -1,0 +1,27 @@
+
+public class Number implements INumber{
+	
+	private Integer value;
+	
+	public Number(Integer value) {
+		this.value = value;
+	}
+
+	public void show_content() {
+		System.out.println("The number is " + this.value);
+	}
+	
+	public void iterate(IVisitor visitor)
+	{
+		System.out.println(this.value);
+	} 
+	
+	public String toString() {
+		return "The number is " + this.value;
+	}
+
+	public int get_value() {
+		return this.value;
+	}
+	
+}

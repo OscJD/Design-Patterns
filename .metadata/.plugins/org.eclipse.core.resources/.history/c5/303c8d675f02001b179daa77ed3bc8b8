@@ -1,0 +1,15 @@
+package lab3.homework;
+
+import lab3.homework.Person_.Sex;
+
+public abstract class Sex_class {
+	
+	private Sex sex_info;
+	
+	public abstract void Sex_definition(Sex sex);
+	
+	public void Show_sex(String extra_data) {
+		System.out.println("Sex " + this.sex_info + " Other data " + extra_data);
+	}
+
+}

@@ -1,0 +1,16 @@
+
+public class CalculatingVisitor implements IVisitor{
+
+
+	public void visit(INumber number) {
+		
+	}
+
+
+	public void visit(IOperation node) {
+		
+	}
+
+
+
+}

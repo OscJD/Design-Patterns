@@ -1,0 +1,8 @@
+
+public interface IElement {
+	
+	public void show_content();
+	
+	public String toString();
+
+}

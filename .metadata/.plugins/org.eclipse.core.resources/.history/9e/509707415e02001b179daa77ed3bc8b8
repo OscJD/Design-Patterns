@@ -1,0 +1,27 @@
+package lab3.homework;
+
+import lab3.homework.Person_.Sex;
+
+public class Female extends Sex_class{
+	
+	private Sex sex_type;
+	
+	public Female(Sex sex) {
+		this.sex_type = sex;
+	}
+	
+	@Override
+	public void Sex_definition(Sex sex) {
+		
+		this.sex_type = sex;
+		
+	}
+	
+	@Override
+	public void Show_sex(String extra_data) {
+		System.out.println("Sex " + this.sex_type + " Other data " + extra_data);
+
+	}
+
+
+}

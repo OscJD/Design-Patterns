@@ -1,0 +1,8 @@
+
+public interface IVisitor {
+	
+	public void visit(INumber element);
+	public int visit(IOperation element);
+	
+	
+}

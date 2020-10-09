@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+
+public class Main {
+	
+	// 3 + 5 * 6
+	
+	protected ArrayList<IElement> elements;
+	
+	public static void main(String[] args) {
+		Number n1 = new Number();
+	}
+
+}

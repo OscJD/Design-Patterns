@@ -1,0 +1,24 @@
+
+public class Number implements IElement{
+	
+	private Integer value;
+	
+	public Number(Integer value) {
+		this.value = value;
+	}
+
+	@Override
+	public void show_content() {
+		System.out.println("The number is " + this.value);
+	}
+	
+	public String toString() {
+		return "The number is " + this.value;
+	}
+
+	@Override
+	public void iterate() {
+		// TODO Auto-generated method stub
+		
+	} 
+}

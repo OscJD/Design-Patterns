@@ -1,0 +1,15 @@
+
+public class Person {
+	private String name;
+	
+	private Person(String nm) {
+		this.name = nm;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void set_name(String nm) {
+		this.name = nm;
+	}
+}

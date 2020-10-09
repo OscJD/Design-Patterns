@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+
+public class Component {
+	
+	Number n1 = new Number(5);
+	Number n2 = new Number(6);
+	Number n3 = new Number(3);
+	IOperation sum1;
+	IOperation mult1;
+	
+	protected ArrayList<INumber> elements;
+	
+	public Component() {
+		
+		mult1 = new Multiplication();
+		mult1.add(n1);
+		mult1.add(n2); 
+		
+		sum1 = new Addition();
+		sum1.add(mult1);
+		sum1.add(n3);
+		
+		
+	}
+	
+	public void iterate(IVisitor visitor) {
+		mult1.accept(visitor);
+	}
+	
+	
+}

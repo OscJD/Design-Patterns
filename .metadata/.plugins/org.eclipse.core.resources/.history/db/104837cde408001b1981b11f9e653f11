@@ -1,0 +1,6 @@
+
+public class CalculatingVisitor implements IVisitor{
+
+
+
+}

@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public interface IOperation extends IElement{
+
+	
+	public void add(IElement element);
+	
+	public void remove(int index);
+	
+	public void show_content();
+	
+	public String toString();
+
+	public void iterate();
+	
+	
+}

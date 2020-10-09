@@ -1,0 +1,15 @@
+//import java.util.ArrayList;
+
+public interface IOperation extends INumber{
+
+	
+	public void add(INumber element);
+	
+	public void remove(int index);
+	
+	public void show_content();
+	
+	public String toString();
+
+	
+}

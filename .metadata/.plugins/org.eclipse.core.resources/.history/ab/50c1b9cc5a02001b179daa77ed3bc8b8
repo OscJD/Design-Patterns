@@ -1,0 +1,21 @@
+package lab3.homework;
+
+import lab3.homework.Person_.Sex;
+
+public class Male extends Sex_class
+{
+	Sex sex_type;
+	
+	@Override
+	public void Sex_class(Sex sex) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public void Show_sex(String extra_data) {
+		
+	}
+
+	
+}

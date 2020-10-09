@@ -1,0 +1,6 @@
+
+public interface IElement {
+	
+	public void show_content();
+
+}

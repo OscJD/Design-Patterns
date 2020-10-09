@@ -1,0 +1,13 @@
+
+public class PrintingVisitor implements IVisitor{
+
+	public void visit(INumber number) {
+		number.get_value();
+	}
+
+
+	public void visit(IOperation node) {
+		
+	}
+
+}

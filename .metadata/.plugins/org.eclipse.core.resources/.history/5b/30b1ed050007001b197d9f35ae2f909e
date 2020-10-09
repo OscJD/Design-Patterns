@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+
+public class Main {
+	
+	private ArrayList<IElement> elements;
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	
+	public void load() {
+		this.elements = new ArrayList<IElement>(); 
+	}
+
+}

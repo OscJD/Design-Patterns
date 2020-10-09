@@ -1,0 +1,37 @@
+package lab3.homework;
+
+//import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import lab3.homework.Person_.Sex;
+
+public class personFactory {
+	
+	private static Map<Sex, Sex_class> personMap = new HashMap<Sex, Sex_class>();
+	
+	public Person_ add_person(Sex sex) {
+		Person_ person = personMap.get(sex);
+		if(person ==null) {
+			if(sex = "Male") {
+				person = new Male(sex);
+			}
+			else if() {
+				person = new Female(sex);
+			}
+			System.out.println("New person added");
+			//person.Person_set(probsHospital,probsHospitalDeath,probsSuddenDeath,age,sex,index);
+			personMap.put(sex, person);
+			
+		}	
+		//System.out.println("Existent person");
+		//System.out.println(personMap);
+		return person;
+		
+		
+	}
+	
+	
+	
+
+}

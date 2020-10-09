@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+
+public class Multiplication implements IOperation{
+	
+	private ArrayList<INode> elements_in_node = new ArrayList<INode>();
+	
+	public Multiplication() {}
+	
+	public void add_element(INode element) {
+		this.elements_in_node.add(element);
+	}
+	
+	public void show_content() {
+		for(INode elem:elements_in_node) {
+			System.out.println(elem);
+		}
+	}
+
+	public void iterate(IVisitor visitor) {
+		elements_in_node.stream().forEach( e -> System.out.println(e));
+	}
+
+	public int accept(IVisitor visitor) {
+		return visitor.visit(this); 
+	}
+	
+	public int get_value() {
+		return 0;
+	} 
+}

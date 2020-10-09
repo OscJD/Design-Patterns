@@ -1,0 +1,10 @@
+
+public class PrintingVisitor implements IVisitor{
+
+	@Override
+	public void printResult() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

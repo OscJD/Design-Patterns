@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class Main {
+	
+	// 3 + 5 * 6
+	
+	public static void main(String[] args) {
+		Component tree = new Component();
+		
+		
+		
+		IVisitor printer = new PrintingVisitor();
+		
+		tree.iterate(printer);
+		printer.printResult();
+		
+		IVisitor calculator = new CalculatingVisitor();
+		
+		
+	}
+
+}

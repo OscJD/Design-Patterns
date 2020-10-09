@@ -1,0 +1,10 @@
+
+public interface INumber {
+	
+	public void show_content();
+	
+	public void iterate(IVisitor visitor);
+	
+	public String toString();
+
+}

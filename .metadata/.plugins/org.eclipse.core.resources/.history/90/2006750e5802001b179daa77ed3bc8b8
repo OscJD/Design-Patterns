@@ -1,0 +1,5 @@
+package lab3.homework;
+
+public abstract class Sex_class {
+
+}

@@ -1,0 +1,6 @@
+
+public interface IVisitor {
+	
+	public void visit();
+	public void printResult();
+}

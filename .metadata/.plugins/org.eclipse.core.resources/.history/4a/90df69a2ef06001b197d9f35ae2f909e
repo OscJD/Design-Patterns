@@ -1,0 +1,15 @@
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		PizzeriaCF cf= new PizzeriaCF();
+		
+		Pizza peperoni = cf.crearPizza("Peperoni");
+		Pizzeria hawaiana = cf.crearPizza("Hawaiana");
+		
+		
+		
+	}
+
+}

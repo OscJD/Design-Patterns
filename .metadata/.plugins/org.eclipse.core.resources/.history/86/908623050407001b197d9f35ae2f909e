@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+public class Main {
+	
+	// 3 + 5 * 6
+	
+	protected ArrayList<IElement> elements;
+	
+	public static void main(String[] args) {
+		Number n1 = new Number(5);
+		Number n2 = new Number(6);
+		Number n3 = new Number(6);
+		
+		Operation mult1 = new Operation();
+		mult1.add(n1);
+		mult1.add(n2);
+		
+		Operation sum1 = new Operation();
+		sum1.add(mult1);
+		sum1.add();
+	}
+
+}

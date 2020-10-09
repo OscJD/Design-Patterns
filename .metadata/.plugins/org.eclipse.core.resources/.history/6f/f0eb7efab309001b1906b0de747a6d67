@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+
+public class Addition implements IOperation {
+
+	private ArrayList<INode> elements_in_node = new ArrayList<INode>();
+	
+	public Addition() {	}
+	
+	public void add_element(INode element) {
+		this.elements_in_node.add(element);
+	}
+
+	public void iterate(IVisitor visitor) { 
+		//elements_in_node.stream().forEach( e-> System.out.println(e)); 
+		//System.out.println(elements_in_node);
+		elements_in_node.stream().forEachOrdered(e -> System.out.println(e));//;( e -> e.accept(visitor));
+		elements_in_node.stream().forEach( e -> e.accept(visitor));
+	}
+
+	public int accept(IVisitor visitor) {
+		System.out.println(visitor);
+		return visitor.visit(this);
+	}
+
+	public int get_value() {
+		return 0;
+	}
+
+
+
+}

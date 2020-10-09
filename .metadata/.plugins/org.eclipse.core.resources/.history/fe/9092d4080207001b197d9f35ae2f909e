@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class Operation implements IElement{
+	private ArrayList<IElement> elements_in_node = new ArrayList<>();
+	
+	public void add(IElement element) {
+		this.elements_in_node.add(element);
+	}
+	
+	public void remove(int index) {
+		this.elements_in_node.remove(index);
+	}
+
+}

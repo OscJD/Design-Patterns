@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+public class Operation implements IElement{
+	private ArrayList<IElement> elemnts_in_node;
+	
+	public add(IElement element) {
+		elements_in_node.add()
+	}
+
+}

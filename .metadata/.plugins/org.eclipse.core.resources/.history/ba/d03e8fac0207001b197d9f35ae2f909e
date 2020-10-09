@@ -1,0 +1,9 @@
+
+public class Number implements IElement{
+	
+	private Integer value;
+	
+	public void Number(Integer value) {
+		this.value = value;
+	}
+}

@@ -1,0 +1,20 @@
+
+public class PrintingVisitor implements IVisitor{
+	
+	public PrintingVisitor() {
+		
+	}
+
+	public int visit(INode number) {
+		System.out.println(number);
+		return number.get_value();
+	}
+
+
+	public int visit(IOperation node) {
+		System.out.println(node.getClass().getName());
+		
+		return 0;
+	}
+
+}

@@ -1,0 +1,12 @@
+
+public class Tester_inheritance {
+	
+	public static void main(String[] args) {
+		
+		Student s = new Student();
+		
+		String n=s.getName();
+		
+	}
+
+}

@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+
+public class PrintingVisitor implements IVisitor{
+	
+	private ArrayList<String> acc_print = new  ArrayList<String>();
+	
+	public PrintingVisitor() {
+		
+	}
+
+	public int visit(Number number) {
+		System.out.println("Es un numero");
+		System.out.println(number.get_value());
+		acc_print.add(Integer.toString(number.get_value()));
+		number.get_node_up();
+		return number.get_value();
+	}
+
+
+	public int visit(IOperation node) {
+		System.out.println(node.getClass().getName());
+		if (node.getClass().getName() == "Addition"){
+			acc_print.add("+");
+		}
+		if (node.getClass().getName() == "Multiplication") {
+			acc_print.add("*");
+		}
+		
+		node.iterate(this);
+		return 0;
+	}
+	// Infix 3 + 5 * 6
+	public void printResult() {
+		for (String element : acc_print) { 		      
+	           System.out.print(element); 		
+	      }
+		System.out.println();
+	}
+
+}

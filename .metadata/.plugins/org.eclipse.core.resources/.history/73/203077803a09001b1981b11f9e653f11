@@ -1,0 +1,20 @@
+
+public class CalculatingVisitor implements IVisitor{
+
+	
+	public CalculatingVisitor() {
+		
+	}
+
+	public void visit(INumber number) {
+		number.get_value();
+	}
+
+
+	public void visit(IOperation node) {
+		
+	}
+
+
+
+}

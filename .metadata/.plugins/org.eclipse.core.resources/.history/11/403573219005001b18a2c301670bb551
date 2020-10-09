@@ -1,0 +1,8 @@
+
+public class Jaguar extends Animal{
+
+		private int edad;
+		private float peso;
+		
+		public Jaguar(int edad, float peso)
+}
