@@ -9,13 +9,13 @@ public class Main {
 		
 		
 		IVisitor printer = new PrintingVisitor();
-		
 		tree.iterate(printer);
-		
 		printer.printResult();
 		
-		//IVisitor calculator = new CalculatingVisitor();
-		//tree.iterate(calculator);
+		
+		IVisitor calculator = new CalculatingVisitor();
+		tree.iterate(calculator);
+		calculator.printResult();
 		
 		
 		
